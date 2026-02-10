@@ -41,8 +41,44 @@ const vue_app = Vue.createApp({
       }
     },
       methods: {
-            /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-      }
+            getMonthText (dataArray) {
+                  if(dataArray[1] == 1){
+                        return "January " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 2){
+                        return "February " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 3){
+                        return "March " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 4){
+                        return "April " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 5){
+                        return "May " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 6){
+                        return "June " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 7){
+                        return "July " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 8){
+                        return "August " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 9){
+                        return "September " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 10){
+                        return "October " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 11){
+                        return "November " + dataArray[2] + ", " + dataArray[0]
+                  }
+                  if(dataArray[1] == 12){
+                        return "December " + dataArray[2] + ", " + dataArray[0]
+                  }
+      },
 })
 
 vue_app.mount("#vue_app")
