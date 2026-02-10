@@ -30,6 +30,7 @@ const vue_app = Vue.createApp({
             })
       },
       data() {
+            
         return {
             // This holds your movies.json data.
             movies: [],
