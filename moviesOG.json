@@ -68,47 +68,5 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
-      },
-            {
-            "title": "A Quiet Place",
-            "iscore": 8.2,
-            "rating": "PG-13",
-            "runtime": 90,
-            "released": [2018, 4, 5],
-            "country": "USA",
-            "posters": ["img/quietplace.jpg"],
-            "imdb": "http://www.imdb.com/title/https://www.imdb.com/title/tt6644200/",
-            "website": "https://www.paramountpictures.com/movies/a-quiet-place",
-            "likes": 812,
-            "dislikes": 101,
-            "posterindex": 0
-      },
-            {
-            "title": "Schindler's List",
-            "iscore": 8.9,
-            "rating": "R",
-            "runtime": 195,
-            "released": [1993, 11, 30],
-            "country": "USA",
-            "posters": ["img/schindlerslist.jpg"],
-            "imdb": "http://www.imdb.com/title/tt0108052",
-            "website": "https://www.uphe.com/schindlers-list",
-            "likes": 812,
-            "dislikes": 101,
-            "posterindex": 0
-      },
-            {
-            "title": "Schindler's List",
-            "iscore": 8.9,
-            "rating": "R",
-            "runtime": 195,
-            "released": [1993, 11, 30],
-            "country": "USA",
-            "posters": ["img/schindlerslist.jpg"],
-            "imdb": "http://www.imdb.com/title/tt0108052",
-            "website": "https://www.uphe.com/schindlers-list",
-            "likes": 812,
-            "dislikes": 101,
-            "posterindex": 0
       }
 ]
