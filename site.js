@@ -91,7 +91,7 @@ const vue_app = Vue.createApp({
             this.movies[index].posterIndex++
             if(this.movies[index].posterIndex >= length){
                   this.movies[index].posterIndex = 0
-            },
+            };
       timeText(minutes){
             let hr = Math.floor(minutes / 60)
             let min = minutes - 60
@@ -99,6 +99,6 @@ const vue_app = Vue.createApp({
 }
       }
 }
-})
+});
 
 vue_app.mount("#vue_app")
