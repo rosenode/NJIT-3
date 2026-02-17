@@ -121,8 +121,8 @@ body {
     background-color: #9edd87;
 }
 .dislikes:hover{
-    color:#fdd6d6;
-    background-color: #F65A5B;
+    color:#F65A5B;
+    background-color: #fdd6d6;
 }
 .likes, .dislikes:hover{
     transition: 500ms;

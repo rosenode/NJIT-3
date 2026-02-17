@@ -85,20 +85,20 @@ const vue_app = Vue.createApp({
       dislike(index){
             this.movies[index].dislikes++
       },
-      posterClick(index){
-            let length = this.movies[index].posters.length
+posterClick(index){
+      let length = this.movies[index].posters.length
 
-            this.movies[index].posterIndex++
-            if(this.movies[index].posterIndex >= length){
-                  this.movies[index].posterIndex = 0
-            };
-      timeText(minutes){
-            let hr = Math.floor(minutes / 60)
-            let min = minutes - 60
-            return hr + "h " + min + "m"
-}
+      this.movies[index].posterIndex++
+      if(this.movies[index].posterIndex >= length){
+            this.movies[index].posterIndex = 0
       }
+},
+timeText(minutes){
+      let hr = Math.floor(minutes / 60)
+      let min = minutes % 60
+      return hr + "h " + min + "m"
+}
 }
 });
 
-vue_app.mount("#vue_app")
+vue_app.mount('#vue_app')

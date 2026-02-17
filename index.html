@@ -13,7 +13,7 @@
 	  
 	<!-- DO NOT CHANGE ANYTHING ABOVE THIS LINE-->
 
-	<!-- Javascript Framework (e.g., vue.js) (ADD HERE) --> <script src="vue.js"></script>
+	<!-- Javascript Framework (e.g., vue.js) (ADD HERE) --> <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 
 
@@ -23,21 +23,17 @@
 	<div id="vue_app" class="container">
 
 	    <div class="header">
-
 	      <div class="container">
-	        <h1 id="app_title">%title%</h1>
+	        <h1 id="app_title">{{ title }}</h1>
 	      </div>
-
 	    </div>
 
 	    <div class="main">
 
 	      <div class="row">
-
-	        <div class="col-md-6">
+	        <div class="col-md-6" v-for="(movie, index) in movies" :key="index">
 	            <div class="thumbnail">
-
-						<img src="movie.posters[movie.posterindex]" @click="posterClick(index)" class="poster img-fluid" />
+						<img :src="movie.posters[movie.posterIndex]" @click="posterClick(index)" class="poster img-fluid" />
 						<div class="imageInfo">Poster {{ movie.posterindex +1 }} / {{ movie.posters.length }}</div>
 
 						<p class="title">{{ movie.title }} ({{ movie.country }})</p>
@@ -58,13 +54,11 @@
 	    <div class="footer">
 	      <div class="container">
 			<a id="github" class="btn btn-lg btn-warning">
-				<i class="bi bi-github me-2"></i>%owner%
+				<i class="bi bi-github me-2"></i>{{ owner }}
 	  		</a>
 	      </div>
 	    </div>
 	</div>
-
-	<div v-for=""(movie, index) in movies" :key="index"></div>
 
   	<!-- This load the Vue.js code -->
 	<script type="text/javascript" src="site.js"></script>
